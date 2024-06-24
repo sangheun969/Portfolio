@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Nav from "../organisms/Nav";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { GitHub, Tstory, SangTitle } from "../../image/index";
 
 const Header: React.FC = () => {
+  const [scrolled, setScrolled] = useState(false);
+
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -14,31 +16,59 @@ const Header: React.FC = () => {
     window.open("https://sang969.tistory.com/", "_blank");
   };
 
-  const handleProjectClick = () => {
-    if (location.pathname === "/project") {
-      document.getElementById("work1")?.scrollIntoView({ behavior: "smooth" });
-    } else {
-      navigate("/project");
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleScrollTo = (targetId: string) => {
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const isSrolled = window.scrollY > 0;
+      setScrolled(isSrolled);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="peer h-24 w-full px-4 flex flex-row justify-between items-center bg-black/5 hover:bg-black/0">
+    <div
+      className={`fixed top-0 w-full h-[70px] px-4 flex flex-row justify-between items-center transition-colors duration-300 ${
+        scrolled ? "bg-white" : "bg-black/5"
+      } z-50`}
+    >
       <div className="w-[70px] h-[70px] ">
         <img src={SangTitle} alt="" />
       </div>
       <ul className="flex gap-12 font-NOTO text-xl uppercase font-semibold text-[#666] ">
-        <li className="hover:text-[#333] cursor-pointer">
-          <Link to="/">about</Link>
+        <li className="hover:text-[#333] cursor-pointer" onClick={scrollToTop}>
+          <span>about</span>
         </li>
-        <li className="hover:text-[#333] cursor-pointer">
-          <span onClick={handleProjectClick}>project</span>
+        <li
+          className="hover:text-[#333] cursor-pointer"
+          onClick={() => handleScrollTo("work1")}
+        >
+          <span>project</span>
         </li>
-        <li className="hover:text-[#333] cursor-pointer">
-          <Link to="/contest">contest222</Link>
+        <li
+          className="hover:text-[#333] cursor-pointer"
+          onClick={() => handleScrollTo("contest")}
+        >
+          <span>contest</span>
         </li>
-        <li className="hover:text-[#333] cursor-pointer">
-          <Link to="/skills">skills</Link>
+        <li
+          className="hover:text-[#333] cursor-pointer"
+          onClick={() => handleScrollTo("skills")}
+        >
+          <span>skills</span>
         </li>
       </ul>
       <div className="flex gap-4">

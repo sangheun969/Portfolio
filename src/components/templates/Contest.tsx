@@ -1,7 +1,7 @@
 import React from "react";
 import Hackathon from "../organisms/Hackathon";
 
-const Contents: React.FC = () => {
+const Contest: React.FC = () => {
   return (
     <div className="w-full h-[100vh] flex flex-col">
       <div className="flex flex-col w-full  py-[150px]">
@@ -14,4 +14,4 @@ const Contents: React.FC = () => {
   );
 };
 
-export default Contents;
+export default Contest;
