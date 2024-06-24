@@ -6,7 +6,7 @@ const Contest: React.FC = () => {
     <div className="w-full h-[100vh] flex flex-col">
       <div className="flex flex-col w-full  py-[150px]">
         <p className=" text-center font-bold text-[50px] font-['Tenada']">
-          Contents
+          Contest
         </p>
       </div>
       <Hackathon />

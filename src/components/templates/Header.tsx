@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Nav from "../organisms/Nav";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+
 import { GitHub, Tstory, SangTitle } from "../../image/index";
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
-
-  const navigate = useNavigate();
-  const location = useLocation();
 
   const githubButtonClick = () => {
     window.open("https://github.com/sangheun969", "_blank");

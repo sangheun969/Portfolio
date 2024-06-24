@@ -19,7 +19,7 @@ const Main: React.FC = () => {
           } else if (entry.target === projectRef.current) {
             navigate("/Portfolio/project");
           } else if (entry.target === contentsRef.current) {
-            navigate("/Portfolio/content");
+            navigate("/Portfolio/contest");
           }
         }
       });
