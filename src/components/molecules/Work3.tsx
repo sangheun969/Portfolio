@@ -3,6 +3,10 @@ import { MediaWeb } from "../../image/index";
 import Button from "../atoms/Button";
 import { motion } from "framer-motion";
 const Work3: React.FC = () => {
+  const handleWebButtonClick2 = () => {
+    window.open("https://github.com/sangheun969/mediaroad", "_blank");
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -21,8 +25,13 @@ const Work3: React.FC = () => {
             <li>(주)MEDIA ROAD 홍보 WEB 페이지</li>
           </ul>
           <div className="flex flex-row gap-6">
-            <Button variant="icontBtn" size="md" label="Detail" />
-            <Button variant="icontBtn" size="md" label="Web" />
+            <Button
+              variant="icontBtn"
+              size="md"
+              label="GitHub"
+              onClick={handleWebButtonClick2}
+            />
+            {/* <Button variant="icontBtn" size="md" label="Web" /> */}
           </div>
         </div>
         <div className="w-[600px] h-[300px]">

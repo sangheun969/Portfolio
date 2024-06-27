@@ -9,6 +9,8 @@ module.exports = {
     extend: {},
     fontFamily: {
       NOTO: ["Noto Sans KR"],
+      GOTHIC: ["Gothic A1"],
+      DONGLE: ["Dongle"],
     },
   },
   plugins: [],

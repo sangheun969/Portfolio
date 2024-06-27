@@ -13,6 +13,9 @@ const Work1: React.FC = () => {
   const handleWebButtonClick = () => {
     window.open("https://nae-gift.com", "_blank");
   };
+  const handleWebButtonClick2 = () => {
+    window.open("https://github.com/sangheun969/nae-gift", "_blank");
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -36,8 +39,8 @@ const Work1: React.FC = () => {
             <Button
               variant="icontBtn"
               size="md"
-              label="Detail"
-              onClick={openModal}
+              label="GitHub"
+              onClick={handleWebButtonClick2}
             />
             <Button
               variant="icontBtn"

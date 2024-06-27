@@ -7,6 +7,10 @@ const handleWebButtonClick = () => {
   window.open("https://stacker-labs.vercel.app/", "_blank");
 };
 
+const handleWebButtonClick2 = () => {
+  window.open("https://github.com/sangheun969/projectStacker-Labs", "_blank");
+};
+
 const Work2: React.FC = () => {
   return (
     <motion.div
@@ -29,7 +33,12 @@ const Work2: React.FC = () => {
             <li>개발자 커뮤니티 WEB PAGE</li>
           </ul>
           <div className="flex flex-row gap-6">
-            <Button variant="icontBtn" size="md" label="Detail" />
+            <Button
+              variant="icontBtn"
+              size="md"
+              label="GitHub"
+              onClick={handleWebButtonClick2}
+            />
             <Button
               variant="icontBtn"
               size="md"

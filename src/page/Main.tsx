@@ -13,6 +13,7 @@ const Main: React.FC = () => {
   useEffect(() => {
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
+        console.log(entry.target);
         if (entry.isIntersecting) {
           if (entry.target === bannerRef.current) {
             navigate("/Portfolio");
@@ -27,7 +28,7 @@ const Main: React.FC = () => {
 
     const observer = new IntersectionObserver(observerCallback, {
       root: null,
-      rootMargin: "0px",
+      rootMargin: "-10px 0px 0px 0px",
       threshold: 0.3,
     });
 
