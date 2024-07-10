@@ -11,6 +11,13 @@ import ETHSeoul from "./ethSeoul.jpg";
 import ETHSeoul2 from "./ethSeoul2.jpg";
 import ETHSeoul3 from "./ethSeoul3.jpg";
 import ETHSeoul4 from "./ethSeoul4.jpg";
+import ReactIcon from "./reactIcon.png";
+import RecoilIcon from "./recoilIcon.png";
+import Ethericon from "./etherIcon.png";
+import TailwindIcon from "./tailwind.png";
+import TypeScriptIcon from "./typeScriptIcon.png";
+import S3Icon from "./s3Icon.png";
+import AWSICon from "./awsIcon.png";
 
 export {
   Profile,
@@ -26,4 +33,11 @@ export {
   ETHSeoul2,
   ETHSeoul3,
   ETHSeoul4,
+  ReactIcon,
+  RecoilIcon,
+  Ethericon,
+  TailwindIcon,
+  TypeScriptIcon,
+  S3Icon,
+  AWSICon,
 };

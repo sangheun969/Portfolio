@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "../atoms/Button";
 import ImageSlide from "../molecules/ImageSlide";
-import { Link } from "react-router-dom";
+
 const Hackathon: React.FC = () => {
   const [contestProject, setContestProject] = useState(false);
   const [targetedProject, setTargetedProject] = useState(false);
@@ -65,7 +65,7 @@ const Hackathon: React.FC = () => {
           </div>
         )}
         {targetedProject && (
-          <span className="font-NOTO text-lg">
+          <span className="font-NOTO text-md">
             분산형 식별자(DID), 검증 가능한 자격 증명(VC) 및 스마트 계약(SC)의
             최첨단 트리오를 활용 판매자(예: 상점 주인), 선물 제공자(선물을
             구매하려는 개인), 선물 받는 사람(선물 수령인)의 세 가지 주요 역할
@@ -79,7 +79,7 @@ const Hackathon: React.FC = () => {
         )}
         {resultProject && (
           <div>
-            <ul>
+            <ul className="">
               <li>
                 NextJS 와 Dapp Scraffold-ETH 분산 응용 프로그램 프레임 워크를
                 이용하여 프론트엔드와 백엔드를 구축 및 스마트 컨트랙트 상호 자용
