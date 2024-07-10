@@ -74,10 +74,10 @@ const Work1: React.FC = () => {
 
           <div className="flex flex-row">
             <ul className="flex flex-col justify-center border-r-2">
-              <li className="">
+              <li className="border">
                 <button onClick={toggleDescription1}>주요 업무</button>
               </li>
-              <li className="">
+              <li className="border">
                 <button onClick={toggleDescription2}>프로젝트 회고</button>
               </li>
               <li></li>

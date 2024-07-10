@@ -7,6 +7,13 @@ const Hackathon: React.FC = () => {
   const [targetedProject, setTargetedProject] = useState(false);
   const [resultProject, setResultProject] = useState(false);
 
+  const handleWebButtonClick = () => {
+    window.open("https://devfolio.co/projects/naegift-208b", "_blank");
+  };
+  const handleWebButtonClick2 = () => {
+    window.open("https://github.com/naegift/did_project", "_blank");
+  };
+
   useEffect(() => {
     toggleDescription1();
   }, []);
@@ -44,8 +51,8 @@ const Hackathon: React.FC = () => {
         </div>
         {contestProject && (
           <div>
-            <span className="font-NOTO text-2xl">
-              <ul>
+            <span className="font-NOTO text-2xl ">
+              <ul className="flex flex-col gap-4">
                 <li>
                   <p>팀명: Authrium</p>
                 </li>
@@ -56,8 +63,18 @@ const Hackathon: React.FC = () => {
                   <p>2024/03/29~2024/03/31</p>
                 </li>
                 <li className="flex flex-row gap-4">
-                  <Button variant="icontBtn" size="md" label="Web Page" />
-                  <Button variant="icontBtn" size="md" label="GitHub" />
+                  <Button
+                    variant="icontBtn"
+                    size="md"
+                    label="Web Page"
+                    onClick={handleWebButtonClick}
+                  />
+                  <Button
+                    variant="icontBtn"
+                    size="md"
+                    label="GitHub"
+                    onClick={handleWebButtonClick2}
+                  />
                 </li>
                 <li></li>
               </ul>
@@ -79,7 +96,7 @@ const Hackathon: React.FC = () => {
         )}
         {resultProject && (
           <div>
-            <ul className="">
+            <ul className="flex flex-col gap-3">
               <li>
                 NextJS 와 Dapp Scraffold-ETH 분산 응용 프로그램 프레임 워크를
                 이용하여 프론트엔드와 백엔드를 구축 및 스마트 컨트랙트 상호 자용
