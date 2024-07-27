@@ -18,6 +18,15 @@ import TailwindIcon from "./tailwind.png";
 import TypeScriptIcon from "./typeScriptIcon.png";
 import S3Icon from "./s3Icon.png";
 import AWSICon from "./awsIcon.png";
+import JavascriptIcon from "./javascriptIcon.png";
+import ReactQIcon from "./reactQueryIcon.png";
+import NodeJSIcon from "./nodeJSIcon.png";
+import WebSocketIcon from "./websocketIcon.png";
+import SolidityIcon from "./solidityIcon.png";
+import NextIcon from "./nextIcon.png";
+import MySQLIcon from "./mysqlIcon.png";
+import GithubActionsIcon from "./githubActions.png";
+import AWSS3Icon from "./awsS3Icon.png";
 
 export {
   Profile,
@@ -39,5 +48,14 @@ export {
   TailwindIcon,
   TypeScriptIcon,
   S3Icon,
+  AWSS3Icon,
   AWSICon,
+  JavascriptIcon,
+  ReactQIcon,
+  NodeJSIcon,
+  WebSocketIcon,
+  SolidityIcon,
+  NextIcon,
+  MySQLIcon,
+  GithubActionsIcon,
 };

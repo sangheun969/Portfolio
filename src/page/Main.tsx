@@ -3,10 +3,12 @@ import { useNavigate } from "react-router-dom";
 import Banner from "../components/templates/Banner";
 import ProjectWork from "../components/templates/ProjectWork";
 import Header from "../components/templates/Header";
+import Skill from "../components/templates/Skill";
 import Contest from "../components/templates/Contest";
 const Main: React.FC = () => {
   const bannerRef = useRef<HTMLDivElement | null>(null);
   const projectRef = useRef<HTMLDivElement | null>(null);
+  const skillsRef = useRef<HTMLDivElement | null>(null);
   const contentsRef = useRef<HTMLDivElement | null>(null);
   const navigate = useNavigate();
 
@@ -19,6 +21,8 @@ const Main: React.FC = () => {
             navigate("/Portfolio");
           } else if (entry.target === projectRef.current) {
             navigate("/Portfolio/project");
+          } else if (entry.target === skillsRef.current) {
+            navigate("/Portfolio/skills");
           } else if (entry.target === contentsRef.current) {
             navigate("/Portfolio/contest");
           }
@@ -34,24 +38,29 @@ const Main: React.FC = () => {
 
     if (bannerRef.current) observer.observe(bannerRef.current);
     if (projectRef.current) observer.observe(projectRef.current);
+    if (skillsRef.current) observer.observe(skillsRef.current);
     if (contentsRef.current) observer.observe(contentsRef.current);
 
     return () => {
       if (bannerRef.current) observer.unobserve(bannerRef.current);
       if (projectRef.current) observer.unobserve(projectRef.current);
+      if (skillsRef.current) observer.unobserve(skillsRef.current);
       if (contentsRef.current) observer.unobserve(contentsRef.current);
     };
   }, [navigate]);
 
   return (
-    <div className="">
-      <div className="h-[100vh] w-full bg-black/0 peer-hover:bg-black/60 peer">
+    <div>
+      <div className="bg-black/0 peer-hover:bg-black/60 peer">
         <Header />
         <div id="banner" ref={bannerRef}>
           <Banner />
         </div>
         <div id="work1" ref={projectRef}>
           <ProjectWork />
+        </div>
+        <div id="skills" ref={skillsRef}>
+          <Skill />
         </div>
         <div id="contest" ref={contentsRef}>
           <Contest />

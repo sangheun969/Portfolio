@@ -18,9 +18,9 @@ const Work3: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full flex flex-row justify-center gap-[300px] ">
+      <div className="w-full flex flex-row justify-center">
         <div className="flex flex-col gap-10">
-          <p className="text-[50px] font-['Tenada']">MediaRoad</p>
+          <p className="text-[30px] font-['Tenada']">MediaRoad</p>
           <ul className="font-['Tenada']">
             <li>(주)MEDIA ROAD 홍보 WEB 페이지</li>
           </ul>
@@ -34,8 +34,8 @@ const Work3: React.FC = () => {
             {/* <Button variant="icontBtn" size="md" label="Web" /> */}
           </div>
         </div>
-        <div className="w-[600px] h-[300px]">
-          <img src={MediaWeb} alt="" />
+        <div className="">
+          <img src={MediaWeb} alt="" className="w-[600px] h-[300px]" />
         </div>
       </div>
     </motion.div>

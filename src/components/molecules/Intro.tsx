@@ -30,7 +30,7 @@ const Intro: React.FC = () => {
   }, []);
 
   return (
-    <div className="pt-[50px]">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="overflow-hidden h-[140px] relative ">
         <div
           className={"sticky "}

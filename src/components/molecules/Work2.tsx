@@ -23,12 +23,9 @@ const Work2: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full flex flex-row justify-center gap-[300px] ">
-        <div className="w-[600px] h-[300px]">
-          <img src={Stacker1} alt="" />
-        </div>
+      <div className="w-full flex flex-row justify-center">
         <div className="flex flex-col gap-10">
-          <p className="text-[50px] font-['Tenada']">STACKER-LABS</p>
+          <p className="text-[30px] font-['Tenada']">STACKER-LABS</p>
           <ul className="font-['Tenada']">
             <li>개발자 커뮤니티 WEB PAGE</li>
           </ul>
@@ -46,6 +43,9 @@ const Work2: React.FC = () => {
               onClick={handleWebButtonClick}
             />
           </div>
+        </div>
+        <div className="">
+          <img src={Stacker1} alt="" className="w-[600px] h-[300px]" />
         </div>
       </div>
     </motion.div>

@@ -41,18 +41,22 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       const bannerElement = document.getElementById("banner");
       const projectElement = document.getElementById("work1");
+      const skillElement = document.getElementById("skills");
       const contestElement = document.getElementById("contest");
 
       const scrollY = window.scrollY;
 
       const bannerTop = bannerElement ? bannerElement.offsetTop : 0;
       const projectTop = projectElement ? projectElement.offsetTop : 0;
+      const skillTop = skillElement ? skillElement.offsetTop : 0;
       const contestTop = contestElement ? contestElement.offsetTop : 0;
 
       if (scrollY >= bannerTop && scrollY < projectTop) {
         setActiveMenu("about");
-      } else if (scrollY >= projectTop && scrollY < contestTop) {
+      } else if (scrollY >= projectTop && scrollY < skillTop) {
         setActiveMenu("project");
+      } else if (scrollY >= skillTop && scrollY < contestTop) {
+        setActiveMenu("skills");
       } else if (scrollY >= contestTop) {
         setActiveMenu("contest");
       } else {
@@ -95,20 +99,20 @@ const Header: React.FC = () => {
         </li>
         <li
           className={`hover:text-[#333] cursor-pointer ${
+            activeMenu === "skills" ? "border-b-2 border-blue-500" : ""
+          }`}
+          onClick={() => handleScrollTo("skills")}
+        >
+          <span>skills</span>
+        </li>
+        <li
+          className={`hover:text-[#333] cursor-pointer ${
             activeMenu === "contest" ? "border-b-2 border-blue-500" : ""
           }`}
           onClick={() => handleScrollTo("contest")}
         >
           <span>contest</span>
         </li>
-        {/* <li
-          className={`hover:text-[#333] cursor-pointer ${
-            activeMenu === "skills" ? "border-b-2 border-blue-500" : ""
-          }`}
-          onClick={() => handleScrollTo("skills")}
-        >
-          <span>skills</span>
-        </li>  */}
       </ul>
       <div className="flex gap-4">
         <div
