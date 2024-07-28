@@ -11,7 +11,7 @@ const ImageSlide = () => {
     fade: true,
   };
   return (
-    <div className="slider-container slick-slider pb-5  w-[50%] h-[50%]">
+    <div className="slider-container slick-slider pb-5  w-[300px] h-[300px]">
       <Slider {...settings}>
         <div className="">
           <img src={ETHSeoul2} alt="" className="mx-[auto]" />

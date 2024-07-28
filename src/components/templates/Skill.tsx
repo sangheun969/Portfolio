@@ -29,7 +29,7 @@ const Skill: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full py-[150px] ">
+      <div className="w-full h-full py-[150px]">
         <div className="">
           <p className="text-center font-bold text-[50px] ">Skills</p>
         </div>
