@@ -18,7 +18,7 @@ const Work3: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full flex flex-row justify-center">
+      <div className="w-full p-3 flex flex-row justify-center border rounded-lg">
         <div className="flex flex-col gap-10">
           <p className="text-[30px] font-['Tenada']">MediaRoad</p>
           <ul className="font-['Tenada']">

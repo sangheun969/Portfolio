@@ -47,8 +47,8 @@ const Work1: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full h-full flex flex-row justify-center">
-        <div className="flex flex-col gap-4">
+      <div className="w-full h-full w-full p-3 flex flex-row justify-center border rounded-lg">
+        <div className="flex flex-col gap-10">
           <p className="text-[30px] font-['Tenada']">Naegift</p>
           <div>
             <ul className="flex flex-row w-full">
@@ -159,7 +159,7 @@ const Work1: React.FC = () => {
             />
           </div>
         </div>
-        <div className="w-[600px] h-[300px]">
+        <div className="w-[550px] h-[300px]">
           <img src={Naegift1} alt="" />
         </div>
       </div>

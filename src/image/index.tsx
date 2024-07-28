@@ -27,6 +27,8 @@ import NextIcon from "./nextIcon.png";
 import MySQLIcon from "./mysqlIcon.png";
 import GithubActionsIcon from "./githubActions.png";
 import AWSS3Icon from "./awsS3Icon.png";
+import ExpressJSIcon from "./expressJSIcon.png";
+import JsIcon2 from "./jsIcon2.png";
 
 export {
   Profile,
@@ -58,4 +60,6 @@ export {
   NextIcon,
   MySQLIcon,
   GithubActionsIcon,
+  ExpressJSIcon,
+  JsIcon2,
 };
