@@ -31,7 +31,7 @@ const Work2: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full p-3 flex flex-row justify-center border rounded-lg">
+      <div className="w-full p-3 flex flex-row justify-center border rounded-lg gap-4">
         <div className="flex flex-col gap-10">
           <p className="text-[30px] font-['Tenada']">STACKER-LABS</p>
           <div>

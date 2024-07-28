@@ -47,7 +47,7 @@ const Work1: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full h-full w-full p-3 flex flex-row justify-center border rounded-lg">
+      <div className="w-full h-full  p-3 flex flex-row justify-center border rounded-lg gap-4">
         <div className="flex flex-col gap-10">
           <p className="text-[30px] font-['Tenada']">Naegift</p>
           <div>
@@ -144,7 +144,7 @@ const Work1: React.FC = () => {
             )}
           </div> */}
 
-          <div className="flex flex-row p-8 gap-6">
+          <div className="flex flex-row gap-6">
             <Button
               variant="icontBtn"
               size="md"
@@ -159,7 +159,7 @@ const Work1: React.FC = () => {
             />
           </div>
         </div>
-        <div className="w-[550px] h-[300px]">
+        <div className="w-[600px] h-[300px]">
           <img src={Naegift1} alt="" />
         </div>
       </div>
