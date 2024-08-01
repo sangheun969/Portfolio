@@ -33,68 +33,76 @@ const Skill: React.FC = () => {
         <div className="">
           <p className="text-center font-bold text-[50px] ">Skills</p>
         </div>
-        <div className="flex flex-col mx-auto justify-center w-[70%] h-full pt-[80px] gap-4 border rounded-lg">
-          <div className="border">
-            <p>Programing Languages</p>
+        <div className="flex flex-col mx-auto justify-center w-[70%] h-full pt-[80px] gap-8">
+          <div className="relative w-full h-full border-2">
+            <div className="absolute top-[-20px] bg-white px-2 text-xl">
+              <p>Programing Languages</p>
+            </div>
+            <div className="flex flex-row gap-3 py-3">
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={JsIcon2} alt="" className="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={TypeScriptIcon} alt="" className="" />
+              </span>
+            </div>
           </div>
-          <div className="flex flex-row">
-            <span className="border w-[60px] h-[60px]">
-              <img src={JsIcon2} alt="" className="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={TypeScriptIcon} alt="" className="" />
-            </span>
+          <div className="relative w-full h-full border-2">
+            <div className="absolute top-[-20px] bg-white px-2 text-xl">
+              <p>Framework/ Library</p>
+            </div>
+            <div className="flex flex-row gap-3 py-3">
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={ReactIcon} alt="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={ReactQIcon} alt="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={RecoilIcon} alt="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={NodeJSIcon} alt="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={ExpressJSIcon} alt="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={WebSocketIcon} alt="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={TailwindIcon} alt="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={SolidityIcon} alt="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={NextIcon} alt="" />
+              </span>
+            </div>
           </div>
-          <div className="border">
-            <p>Framework/ Library</p>
+          <div className="relative w-full h-full border-2">
+            <div className="absolute top-[-20px] bg-white px-2 text-xl">
+              <p>Server</p>
+            </div>
+            <div className="flex flex-row gap-3 py-3">
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={MySQLIcon} alt="" />
+              </span>
+            </div>
           </div>
-          <div className="flex flex-row">
-            <span className="border w-[60px] h-[60px]">
-              <img src={ReactIcon} alt="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={ReactQIcon} alt="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={RecoilIcon} alt="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={NodeJSIcon} alt="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={ExpressJSIcon} alt="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={WebSocketIcon} alt="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={TailwindIcon} alt="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={SolidityIcon} alt="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={NextIcon} alt="" />
-            </span>
-          </div>
-          <div className="border">
-            <p>Server</p>
-          </div>
-          <div className="flex flex-row">
-            <span className="border w-[60px] h-[60px]">
-              <img src={MySQLIcon} alt="" />
-            </span>
-          </div>
-          <div className="border">
-            <p>Tooling/ DevOps</p>
-          </div>
-          <div className="flex flex-row">
-            <span className="border w-[60px] h-[60px]">
-              <img src={AWSS3Icon} alt="" />
-            </span>
-            <span className="border w-[60px] h-[60px]">
-              <img src={GithubActionsIcon} alt="" />
-            </span>
+          <div className="relative w-full h-full border-2">
+            <div className="absolute top-[-20px] bg-white px-2 text-xl">
+              <p>Tooling/ DevOps</p>
+            </div>
+            <div className="flex flex-row gap-3 py-3">
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={AWSS3Icon} alt="" />
+              </span>
+              <span className="border w-[60px] h-[60px] rounded-lg hover:scale-105 duration-200">
+                <img src={GithubActionsIcon} alt="" />
+              </span>
+            </div>
           </div>
         </div>
       </div>

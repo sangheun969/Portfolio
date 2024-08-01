@@ -13,25 +13,8 @@ import { motion } from "framer-motion";
 import NaegiftModal from "../atoms/NaegiftModal";
 
 const Work1: React.FC = () => {
-  const [majorTask, setMajorTask] = useState(false);
-  const [projectRetrospection, setProjectRetrospection] = useState(false);
-  const [menuBtn, setMenuBtn] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  useEffect(() => {
-    toggleDescription1();
-  }, []);
-
-  const toggleDescription1 = () => {
-    setMajorTask(true);
-    setProjectRetrospection(false);
-  };
-
-  const toggleDescription2 = () => {
-    setProjectRetrospection(true);
-    setMajorTask(false);
-  };
 
   const handleWebButtonClick = () => {
     window.open("https://nae-gift.com", "_blank");

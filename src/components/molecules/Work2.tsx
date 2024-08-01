@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Stacker1 } from "../../image/index";
 import Button from "../atoms/Button";
 import { motion } from "framer-motion";
@@ -10,16 +10,28 @@ import {
   GithubActionsIcon,
   AWSICon,
 } from "../../image/index";
-
-const handleWebButtonClick = () => {
-  window.open("https://stacker-labs.vercel.app/", "_blank");
-};
-
-const handleWebButtonClick2 = () => {
-  window.open("https://github.com/sangheun969/projectStacker-Labs", "_blank");
-};
+import StackerModal from "../atoms/StackerModal";
 
 const Work2: React.FC = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleWebButtonClick = () => {
+    window.open("https://stacker-labs.vercel.app/", "_blank");
+  };
+
+  const handleWebButtonClick2 = () => {
+    window.open("https://github.com/sangheun969/projectStacker-Labs", "_blank");
+  };
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -76,10 +88,33 @@ const Work2: React.FC = () => {
             />
           </div>
         </div>
-        <div className="">
-          <img src={Stacker1} alt="" className="w-[600px] h-[300px]" />
+        <div
+          className="relative w-[600px] h-[300px]"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <img src={Stacker1} alt="" className="w-full h-full object-cover" />
+          {isHovered && (
+            <div
+              className={`absolute inset-0 bg-black flex items-center justify-center ${
+                isHovered ? "bg-opacity-50 " : "bg-opacity-0"
+              }`}
+            >
+              <button
+                className="bg-white text-black py-2 px-4 rounded"
+                onClick={handleModalOpen}
+              >
+                Read More
+              </button>
+            </div>
+          )}
         </div>
       </div>
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <StackerModal onClose={handleModalClose} />
+        </div>
+      )}
     </motion.div>
   );
 };
