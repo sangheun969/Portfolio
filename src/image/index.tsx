@@ -29,6 +29,8 @@ import GithubActionsIcon from "./githubActions.png";
 import AWSS3Icon from "./awsS3Icon.png";
 import ExpressJSIcon from "./expressJSIcon.png";
 import JsIcon2 from "./jsIcon2.png";
+import DownIcon from "./dowIcon.png";
+import UpIcon from "./upIcon.png";
 
 export {
   Profile,
@@ -62,4 +64,6 @@ export {
   GithubActionsIcon,
   ExpressJSIcon,
   JsIcon2,
+  DownIcon,
+  UpIcon,
 };
