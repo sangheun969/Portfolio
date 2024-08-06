@@ -56,12 +56,13 @@ const Main: React.FC = () => {
         <div id="banner" ref={bannerRef}>
           <Banner />
         </div>
-        <div id="work1" ref={projectRef}>
-          <ProjectWork />
-        </div>
         <div id="skills" ref={skillsRef}>
           <Skill />
         </div>
+        <div id="work1" ref={projectRef}>
+          <ProjectWork />
+        </div>
+
         <div id="contest" ref={contentsRef}>
           <Contest />
         </div>

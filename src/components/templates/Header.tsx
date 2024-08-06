@@ -51,19 +51,18 @@ const Header: React.FC = () => {
       const skillTop = skillElement ? skillElement.offsetTop : 0;
       const contestTop = contestElement ? contestElement.offsetTop : 0;
 
-      if (scrollY >= bannerTop && scrollY < projectTop) {
+      if (scrollY >= bannerTop && scrollY < skillTop) {
         setActiveMenu("about");
-      } else if (scrollY >= projectTop && scrollY < skillTop) {
-        setActiveMenu("project");
-      } else if (scrollY >= skillTop && scrollY < contestTop) {
+      } else if (scrollY >= skillTop && scrollY < projectTop) {
         setActiveMenu("skills");
+      } else if (scrollY >= projectTop && scrollY < contestTop) {
+        setActiveMenu("project");
       } else if (scrollY >= contestTop) {
         setActiveMenu("contest");
       } else {
         setActiveMenu(null);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -91,20 +90,21 @@ const Header: React.FC = () => {
         </li>
         <li
           className={`hover:text-[#333] cursor-pointer ${
-            activeMenu === "project" ? "border-b-2 border-blue-500" : ""
-          }`}
-          onClick={() => handleScrollTo("work1")}
-        >
-          <span>project</span>
-        </li>
-        <li
-          className={`hover:text-[#333] cursor-pointer ${
             activeMenu === "skills" ? "border-b-2 border-blue-500" : ""
           }`}
           onClick={() => handleScrollTo("skills")}
         >
           <span>skills</span>
         </li>
+        <li
+          className={`hover:text-[#333] cursor-pointer ${
+            activeMenu === "project" ? "border-b-2 border-blue-500" : ""
+          }`}
+          onClick={() => handleScrollTo("work1")}
+        >
+          <span>project</span>
+        </li>
+
         <li
           className={`hover:text-[#333] cursor-pointer ${
             activeMenu === "contest" ? "border-b-2 border-blue-500" : ""

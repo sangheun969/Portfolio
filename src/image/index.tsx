@@ -31,6 +31,7 @@ import ExpressJSIcon from "./expressJSIcon.png";
 import JsIcon2 from "./jsIcon2.png";
 import DownIcon from "./dowIcon.png";
 import UpIcon from "./upIcon.png";
+import EC2Icon from "./awsEc2.png";
 
 export {
   Profile,
@@ -66,4 +67,5 @@ export {
   JsIcon2,
   DownIcon,
   UpIcon,
+  EC2Icon,
 };

@@ -8,3 +8,12 @@
 
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
+
+@layer utilities {
+  .scale-y-150 {
+    transform: scaleY(1.5);
+  }
+  .scale-y-200 {
+    transform: scaleY(2);
+  }
+}

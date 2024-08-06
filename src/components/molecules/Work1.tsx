@@ -39,8 +39,8 @@ const Work1: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="h-full flex flex-row justify-center rounded-lg gap-8">
-        <div className="flex flex-col w-[500px]">
+      <div className="h-full flex flex-row justify-center rounded-lg gap-24">
+        <div className="flex flex-col w-[400px]">
           <p className="text-[30px] font-['Tenada']">Naegift</p>
           <div className="border-b-2 py-4">
             <ul className="flex flex-row w-full gap-2">
@@ -102,7 +102,7 @@ const Work1: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <ul className="font-['Tenada'] w-[500px] py-3 flex flex-col justify-between text-xs gap-5">
+                <ul className="font-['Tenada'] w-[400px] py-3 flex flex-col justify-between text-xs gap-5">
                   <li>
                     지갑 주소 연동: 지갑 주소를 기반으로 API를 호출해 해당
                     사용자의 지갑 주소를 가져오고 이를 통해 사용자가 소유한
