@@ -14,12 +14,16 @@ const Contest: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full h-[100vh] flex flex-col">
-        <div className="w-full py-[150px]">
-          <p className="text-center font-bold text-[50px] ">Contest</p>
-        </div>
-        <div className="mx-[auto] w-[70%] h-full drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] rounded-md hover:scale-105 duration-200 ">
-          <Hackathon />
+      <div className="w-full h-full bg-[#15181B]">
+        <div className="w-[1409px] flex flex-col mx-auto ">
+          <div className="w-full py-[110px]">
+            <p className="text-4xl font-bold font-['Tenada'] text-white">
+              Contest
+            </p>
+          </div>
+          <div className="">
+            <Hackathon />
+          </div>
         </div>
       </div>
     </motion.div>

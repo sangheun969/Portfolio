@@ -31,7 +31,7 @@ const Intro: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="overflow-hidden h-[140px] relative ">
+      <div className="overflow-hidden h-[140px] mobile:h-[70px] relative ">
         <div
           className={"sticky "}
           style={{
@@ -55,7 +55,7 @@ const Intro: React.FC = () => {
           <TextHeader>사용자 경험을 최우선적인</TextHeader>
         </div>
       </div>
-      <div className="overflow-hidden h-[138px] relative ">
+      <div className="overflow-hidden h-[138px] mobile:h-[70px] relative ">
         <div
           style={{
             transform: `translateY(${textRefs.current[2]}%) `,

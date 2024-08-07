@@ -40,7 +40,7 @@ const Skill: React.FC = () => {
               <p className="text-white">#Programing Languages</p>
             </div>
             <div className="flex flex-row gap-3 py-5">
-              <div className="relative border-1 border-gray-300 shadow-indigo-500/40 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative border-1 border-gray-500 shadow-indigo-500/40 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={JsIcon2}
@@ -58,7 +58,7 @@ const Skill: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={TypeScriptIcon}
@@ -83,7 +83,7 @@ const Skill: React.FC = () => {
               <p className="text-white">#Framework/ Library</p>
             </div>
             <div className="flex flex-row flex-wrap gap-3 py-5">
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={ReactIcon}
@@ -101,7 +101,7 @@ const Skill: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={ReactQIcon}
@@ -119,7 +119,7 @@ const Skill: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={RecoilIcon}
@@ -137,7 +137,7 @@ const Skill: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={NodeJSIcon}
@@ -155,7 +155,7 @@ const Skill: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={ExpressJSIcon}
@@ -173,7 +173,7 @@ const Skill: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={WebSocketIcon}
@@ -192,7 +192,7 @@ const Skill: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={TailwindIcon}
@@ -210,7 +210,7 @@ const Skill: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={SolidityIcon}
@@ -228,7 +228,7 @@ const Skill: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={NextIcon}
@@ -254,7 +254,7 @@ const Skill: React.FC = () => {
               <p className="text-white">#Server</p>
             </div>
             <div className="flex flex-row gap-3 py-5">
-              <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+              <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
                     src={MySQLIcon}
@@ -279,10 +279,9 @@ const Skill: React.FC = () => {
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[200px]">
               <p className="text-white">#Tooling/ DevOps</p>
             </div>
-
-            <div className="flex flex-row gap-3 py-5">
+            <div className="flex flex-row flex-wrap gap-3 py-5">
               <div className="flex flex-row gap-3 py-5">
-                <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+                <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                   <div className="flex flex-col w-[90px] justify-center items-center">
                     <img
                       src={EC2Icon}
@@ -302,7 +301,7 @@ const Skill: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-row gap-3 py-5">
-                <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+                <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                   <div className="flex flex-col w-[90px] justify-center items-center">
                     <img
                       src={AWSS3Icon}
@@ -322,7 +321,7 @@ const Skill: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-row gap-3 py-5">
-                <div className="relative borer-1 border-gray-300 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-200 bg-black">
+                <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                   <div className="flex flex-col w-[90px] justify-center items-center">
                     <img
                       src={GithubActionsIcon}

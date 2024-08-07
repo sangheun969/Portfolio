@@ -49,10 +49,10 @@ const Work3: React.FC = () => {
           </ul> */}
           <div className="pt-4 flex flex-row justify-between">
             <button className="w-[15px]" onClick={handleToggleContent}>
-              <img src={isContentVisible ? UpIcon : DownIcon} alt="" />
+              <img src={!isContentVisible ? UpIcon : DownIcon} alt="" />
             </button>
           </div>
-          {isContentVisible && (
+          {!isContentVisible && (
             <div className="gap-6">
               <div className="font-['Tenada'] flex flex-col justify-between text-sm gap-3 py-4">
                 <ul>

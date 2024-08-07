@@ -20,6 +20,11 @@ module.exports = {
       GOTHIC: ["Gothic A1"],
       DONGLE: ["Dongle"],
     },
+    screens: {
+      mobile: { min: "320px", max: "767px" },
+      tablet: { min: "768px", max: "1534px" },
+      note: { max: "1536px" },
+    },
   },
   variants: {
     extend: {

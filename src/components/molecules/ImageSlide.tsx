@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import { ETHSeoul2, ETHSeoul3, ETHSeoul4 } from "../../image/index";
+import { ETHSeoul2, ETHSeoul3, ETHSeoul4, ETHSeoul5 } from "../../image/index";
 
 const ImageSlide = () => {
   const settings = {
@@ -11,16 +11,28 @@ const ImageSlide = () => {
     fade: true,
   };
   return (
-    <div className="slider-container slick-slider pb-5  w-[300px] h-[300px]">
+    <div className="slider-container slick-slider pb-5 w-[650px] h-[690px]">
       <Slider {...settings}>
         <div className="">
-          <img src={ETHSeoul2} alt="" className="mx-[auto]" />
-        </div>
-        <div className="bg-black/90">
-          <img src={ETHSeoul3} alt="" className="h-[30%] w-[60%] mx-[auto]" />
+          <img
+            src={ETHSeoul2}
+            alt=""
+            className="mx-[auto] border rounded-2xl"
+          />
         </div>
         <div className="">
-          <img src={ETHSeoul4} alt="" className="mx-[auto]" />
+          <img
+            src={ETHSeoul5}
+            alt=""
+            className="mx-[auto] border rounded-2xl"
+          />
+        </div>
+        <div className="border rounded-2xl">
+          <img
+            src={ETHSeoul4}
+            alt=""
+            className="mx-[auto] border rounded-2xl"
+          />
         </div>
       </Slider>
     </div>

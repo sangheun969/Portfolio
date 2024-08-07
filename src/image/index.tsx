@@ -11,6 +11,7 @@ import ETHSeoul from "./ethSeoul.jpg";
 import ETHSeoul2 from "./ethSeoul2.jpg";
 import ETHSeoul3 from "./ethSeoul3.jpg";
 import ETHSeoul4 from "./ethSeoul4.jpg";
+import ETHSeoul5 from "./ethSoul5.jpg";
 import ReactIcon from "./reactIcon.png";
 import RecoilIcon from "./recoilIcon.png";
 import Ethericon from "./etherIcon.png";
@@ -47,6 +48,7 @@ export {
   ETHSeoul2,
   ETHSeoul3,
   ETHSeoul4,
+  ETHSeoul5,
   ReactIcon,
   RecoilIcon,
   Ethericon,
