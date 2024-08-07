@@ -45,19 +45,26 @@ const Header: React.FC = () => {
       const contestElement = document.getElementById("contest");
 
       const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
 
       const bannerTop = bannerElement ? bannerElement.offsetTop : 0;
       const projectTop = projectElement ? projectElement.offsetTop : 0;
       const skillTop = skillElement ? skillElement.offsetTop : 0;
       const contestTop = contestElement ? contestElement.offsetTop : 0;
 
-      if (scrollY >= bannerTop && scrollY < skillTop) {
+      if (scrollY < skillTop - windowHeight / 2) {
         setActiveMenu("about");
-      } else if (scrollY >= skillTop && scrollY < projectTop) {
+      } else if (
+        scrollY >= skillTop - windowHeight / 2 &&
+        scrollY < projectTop - windowHeight / 2
+      ) {
         setActiveMenu("skills");
-      } else if (scrollY >= projectTop && scrollY < contestTop) {
+      } else if (
+        scrollY >= projectTop - windowHeight / 2 &&
+        scrollY < contestTop - windowHeight / 2
+      ) {
         setActiveMenu("project");
-      } else if (scrollY >= contestTop) {
+      } else if (scrollY >= contestTop - windowHeight / 2) {
         setActiveMenu("contest");
       } else {
         setActiveMenu(null);
