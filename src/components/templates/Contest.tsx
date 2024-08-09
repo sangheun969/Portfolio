@@ -17,7 +17,7 @@ const Contest: React.FC = () => {
       <div className="w-full h-full bg-[#15181B]">
         <div className="w-[1409px] flex flex-col mx-auto ">
           <div className="w-full py-[110px]">
-            <p className="text-4xl font-bold font-['Tenada'] text-white">
+            <p className="text-5xl font-bold font-['Tenada'] text-white">
               Contest
             </p>
           </div>

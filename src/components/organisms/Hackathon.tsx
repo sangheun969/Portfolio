@@ -42,9 +42,11 @@ const Hackathon: React.FC = () => {
         </div>
         <div className="w-[700px] h-full">
           <span className="w-[590px] font-NOTO text-2xl flex flex-col mx-auto">
-            <div className="font-extrabold text-white text-[60px] py-3 font-NOTO">
-              <div>ETH SEOUL</div>
-              <p>HACKATON 2024</p>
+            <div className="font-extrabold text-white text-[60px] py-3 font-NOTO bg-black bg-gradient-to-r from-black to-gray-500">
+              <div className="">
+                <p>ETH SEOUL</p>
+              </div>
+              <p className="">HACKATON 2024</p>
             </div>
             <ul className="flex flex-col py-7 gap-2 font-['Tenada'] text-white">
               <li className="flex flex-row gap-4">
@@ -84,13 +86,13 @@ const Hackathon: React.FC = () => {
               </li>
               <li className="mt-5 flex flex-row gap-4">
                 <Button
-                  variant="icontBtn"
+                  variant="sendBtn1"
                   size="md"
                   label="Web Page"
                   onClick={handleWebButtonClick}
                 />
                 <Button
-                  variant="icontBtn"
+                  variant="sendBtn1"
                   size="md"
                   label="GitHub"
                   onClick={handleWebButtonClick2}

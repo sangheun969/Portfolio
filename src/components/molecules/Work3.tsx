@@ -62,13 +62,11 @@ const Work3: React.FC = () => {
                   </li>
                 </ul>
                 <ul>
-                  <li className="font-bold text-xl">상품 관리</li>
-                  <li className="p-1">
-                    해당 프로젝트의 핵심 도메인인 상품 관리, 판매, 구매를 구현
-                  </li>
+                  <li className="font-bold text-xl">홍보 게시물</li>
+                  <li className="p-1">-</li>
                 </ul>
                 <ul>
-                  <li className="font-bold text-xl">구매 내역</li>
+                  {/* <li className="font-bold text-xl">구매 내역</li>
                   <li className="p-1">사용자의 구매한 상품 목록을 구현</li>
                 </ul>
                 <ul>
@@ -77,7 +75,7 @@ const Work3: React.FC = () => {
                   </li>
                   <li className="p-1">
                     상품 관련 NFT, DID를 이더리움 네트워크 요청과 응답을 담당
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div>
