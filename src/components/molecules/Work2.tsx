@@ -42,27 +42,29 @@ const Work2: React.FC = () => {
     >
       <div className="h-full flex flex-row justify-center rounded-lg gap-24">
         <div className="flex flex-col w-[400px]">
-          <p className="text-[30px] font-['Tenada']">STACKER-LABS</p>
+          <p className="text-[30px] font-['Tenada'] text-[#C8BFE7] font-bold">
+            STACKER-LABS
+          </p>
           <div className="border-b-2 py-4">
-            <ul className="flex flex-row w-full">
-              <li className="p-1 border">
-                <img src={ReactIcon} alt="" className="w-[30px] h-[30px]" />
+            <ul className="flex flex-row w-full gap-2">
+              <li className="p-1 border rounded-lg bg-white">
+                <img src={ReactIcon} alt="" className="w-[30px] h-[30px] " />
               </li>
-              <li className="p-1 border">
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={RecoilIcon} alt="" className="w-[30px] h-[30px]" />
               </li>
 
-              <li className="p-1 border">
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={TailwindIcon} alt="" className="w-[30px] h-[30px]" />
               </li>
-              <li className="p-1 border">
+              <li className="p-1 border rounded-lg bg-white">
                 <img
                   src={GithubActionsIcon}
                   alt=""
                   className="w-[30px] h-[30px]"
                 />
               </li>
-              <li className="p-1 border">
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={AWSICon} alt="" className="w-[30px] h-[30px]" />
               </li>
             </ul>
@@ -77,7 +79,7 @@ const Work2: React.FC = () => {
           </div>
           {!isContentVisible && (
             <div className="gap-6">
-              <div className="font-['Tenada'] w-[500px] py-3 flex flex-col justify-between text-sm gap-3">
+              <div className="font-['Tenada'] w-[500px] py-3 flex flex-col justify-between text-sm gap-3 text-white">
                 <ul>
                   <li className="font-bold text-xl">프로젝트 세팅</li>
                   <li className="p-1">
@@ -110,7 +112,7 @@ const Work2: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <ul className="font-['Tenada'] w-[400px] py-3  flex flex-col justify-between text-xs gap-5">
+                <ul className="font-['Tenada'] w-[400px] py-3  flex flex-col justify-between text-xs gap-5 text-white">
                   <li>댓글 기능: 댓글 관리는 부모-자식 관계로 구현</li>
                   <li>
                     반응형: Tailwind CSS를 사용하여 반응형으로 디자인되었으며,

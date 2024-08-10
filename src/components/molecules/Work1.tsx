@@ -41,25 +41,27 @@ const Work1: React.FC = () => {
     >
       <div className="h-full flex flex-row justify-center rounded-lg gap-24">
         <div className="flex flex-col w-[400px]">
-          <p className="text-[30px] font-['Tenada']">Naegift</p>
+          <p className="text-[30px] font-['Tenada'] text-[#C8BFE7] font-bold">
+            Naegift
+          </p>
           <div className="border-b-2 py-4">
             <ul className="flex flex-row w-full gap-2">
-              <li className="p-1 border rounded-lg">
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={ReactIcon} alt="" className="w-[30px] h-[30px]" />
               </li>
-              <li className="p-1 border rounded-lg">
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={RecoilIcon} alt="" className="w-[30px] h-[30px]" />
               </li>
-              <li className="p-1 border rounded-lg">
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={Ethericon} alt="" className="w-[30px] h-[30px]" />
               </li>
-              <li className="p-1 border rounded-lg">
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={TailwindIcon} alt="" className="w-[30px] h-[30px]" />
               </li>
-              <li className="p-1 border rounded-lg">
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={S3Icon} alt="" className="w-[30px] h-[30px]" />
               </li>
-              <li className="p-1 border rounded-lg">
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={AWSICon} alt="" className="w-[30px] h-[30px]" />
               </li>
             </ul>
@@ -71,9 +73,9 @@ const Work1: React.FC = () => {
           </div>
           {!isContentVisible && (
             <div className="gap-6">
-              <div className="font-['Tenada'] flex flex-col justify-between text-sm gap-3 py-4">
+              <div className="font-['Tenada'] flex flex-col justify-between text-sm gap-3 py-4 text-white">
                 <ul className="">
-                  <li className="font-bold text-xl">프로젝트 세팅</li>
+                  <li className="font-bold text-xl ">프로젝트 세팅</li>
                   <li className="p-1">
                     React, Recoil, Typescript, Tailwind 초기 프로젝트 세팅
                   </li>
@@ -102,7 +104,7 @@ const Work1: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <ul className="font-['Tenada'] w-[400px] py-3 flex flex-col justify-between text-xs gap-5">
+                <ul className="font-['Tenada'] w-[400px] py-3 flex flex-col justify-between text-xs gap-5 text-white">
                   <li>
                     지갑 주소 연동: 지갑 주소를 기반으로 API를 호출해 해당
                     사용자의 지갑 주소를 가져오고 이를 통해 사용자가 소유한
