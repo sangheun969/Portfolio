@@ -6,6 +6,8 @@ import { GitHub, Tstory, SangTitle } from "../../image/index";
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isBlogHovered, setIsBlogHovered] = useState(false);
 
   const githubButtonClick = () => {
     window.open("https://github.com/sangheun969", "_blank");
@@ -121,18 +123,30 @@ const Header: React.FC = () => {
           <span>contest</span>
         </li>
       </ul>
-      <div className="flex gap-4">
+      <div className="flex flex-row gap-6">
         <div
-          className="w-[30px] h-[30px] cursor-pointer"
+          className="w-[30px] h-[30px] cursor-pointer flex items-center justify-center"
           onClick={githubButtonClick}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
-          <img src={GitHub} alt="" />
+          {isHovered ? (
+            <span className="text-black text-xs font-bold">Github</span>
+          ) : (
+            <img src={GitHub} alt="GitHub" />
+          )}
         </div>
         <div
           className="w-[30px] h-[30px] cursor-pointer"
           onClick={tStoryButtonClick}
+          onMouseEnter={() => setIsBlogHovered(true)}
+          onMouseLeave={() => setIsBlogHovered(false)}
         >
-          <img src={Tstory} alt="" />
+          {isBlogHovered ? (
+            <span className="text-black text-xs font-bold">Blog</span>
+          ) : (
+            <img src={Tstory} alt="Tstory" />
+          )}
         </div>
       </div>
     </div>

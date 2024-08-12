@@ -33,8 +33,8 @@ const Work3: React.FC = () => {
     >
       <div className="h-full flex flex-row justify-center rounded-lg gap-24">
         <div className="flex flex-col w-[400px]">
-          <p className="text-[30px] font-['Tenada'] text-[#C8BFE7] font-bold">
-            MediaRoad
+          <p className="text-[30px] font-['Tenada'] text-[#9d85f1] font-bold">
+            #MediaRoad
           </p>
           <div className="border-b-2 py-4">
             <ul className="flex flex-row w-full gap-2">
@@ -56,7 +56,7 @@ const Work3: React.FC = () => {
           </div>
           {!isContentVisible && (
             <div className="gap-6">
-              <div className="font-['Tenada'] flex flex-col justify-between text-sm gap-3 py-4 text-white">
+              <div className="font-['Tenada'] flex flex-col justify-between text-sm gap-3 py-4">
                 <ul>
                   <li className="font-bold text-xl">프로젝트 세팅</li>
                   <li className="p-1">
@@ -65,7 +65,9 @@ const Work3: React.FC = () => {
                 </ul>
                 <ul>
                   <li className="font-bold text-xl">홍보 게시물</li>
-                  <li className="p-1">-</li>
+                  <li className="p-1">
+                    서버 사이드 렌더링을 이용한 (주)메디아 로드 홍보물 사이트
+                  </li>
                 </ul>
                 <ul>
                   {/* <li className="font-bold text-xl">구매 내역</li>
@@ -81,23 +83,14 @@ const Work3: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <ul className="font-['Tenada'] w-[400px] py-3 flex flex-col justify-between text-xs gap-5 text-white">
+                <ul className="font-['Tenada'] w-[400px] py-3 flex flex-col justify-between text-xs gap-5">
                   <li>
-                    지갑 주소 연동: 지갑 주소를 기반으로 API를 호출해 해당
-                    사용자의 지갑 주소를 가져오고 이를 통해 사용자가 소유한
-                    상품을 조회하면서 데이터를 안전하게 관리하는 법을 배울 수가
-                    있었습니다.
+                    자동 재생 (autoPlay): 플레이어가 끝났을 때 다음 영상 자동
+                    재생
                   </li>
                   <li>
-                    배포: Github Actions를 통해 CI/CD를 처음으로 구축하여, 이를
-                    통해 팀원들과 빠른 피드백과 작업의 효율이 증가했다는 것을
-                    느낄 수 있었습니다.
-                  </li>
-                  <li>
-                    사용자 경험 개선: UX를 개선하기 위해 지갑 연결 실패 시
-                    사용자에게 더 명확한 오류 메시지 및 해결 방법 같은 사용자
-                    피드백 요소를 추가할 계획입니다. 또한, 더 직관적인
-                    인터페이스를 제공하기 위해 UI를 개선할 예정입니다.
+                    Control UI 커스텀: 재생, 일시정지, 뒤로가기 등 UI 커스텀
+                    가능 범위 추가
                   </li>
                 </ul>
               </div>
