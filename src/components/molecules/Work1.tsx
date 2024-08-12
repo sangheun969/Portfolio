@@ -151,9 +151,9 @@ const Work1: React.FC = () => {
               />
             </div>
           )}
-          <div className="mt-2">
+          <div className="mt-10">
             <Button
-              variant="icontBtn"
+              variant="sendBtn1"
               size="md"
               label="GitHub"
               onClick={handleWebButtonClick2}

@@ -79,7 +79,7 @@ const Work2: React.FC = () => {
           </div>
           {!isContentVisible && (
             <div className="gap-6">
-              <div className="font-['Tenada'] w-[500px] py-3 flex flex-col justify-between text-sm gap-3 text-white">
+              <div className="font-['Tenada'] py-3 flex flex-col justify-between text-sm gap-3 text-white">
                 <ul>
                   <li className="font-bold text-xl">프로젝트 세팅</li>
                   <li className="p-1">
@@ -153,9 +153,9 @@ const Work2: React.FC = () => {
               />
             </div>
           )}
-          <div className="mt-2">
+          <div className="mt-10">
             <Button
-              variant="icontBtn"
+              variant="sendBtn1"
               size="md"
               label="GitHub"
               onClick={handleWebButtonClick2}

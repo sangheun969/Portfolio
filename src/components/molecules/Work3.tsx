@@ -110,9 +110,9 @@ const Work3: React.FC = () => {
             alt=""
             className="object-cover w-[500px] h-[500px] rounded-xl border"
           />
-          <div className="mt-2">
+          <div className="mt-10">
             <Button
-              variant="icontBtn"
+              variant="sendBtn1"
               size="md"
               label="GitHub"
               onClick={handleWebButtonClick2}
