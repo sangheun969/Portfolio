@@ -6,7 +6,7 @@ interface TextHeaderProps {
 
 const TextHeader: React.FC<TextHeaderProps> = ({ children }) => {
   return (
-    <p className="text-9xl font-NOTO font-extrabold text-center py-2 text-[#171717] ">
+    <p className="text-9xl font-NOTO font-extrabold text-center py-2 text-white ">
       {children}
     </p>
   );

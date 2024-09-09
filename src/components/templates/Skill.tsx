@@ -39,7 +39,7 @@ const Skill: React.FC = () => {
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[260px]">
               <p className="text-white">#Programing Languages</p>
             </div>
-            <div className="flex flex-row gap-3 py-5">
+            <div className="flex flex-row gap-5 py-5">
               <div className="relative border-1 border-gray-500 shadow-indigo-500/40 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
@@ -82,7 +82,7 @@ const Skill: React.FC = () => {
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[230px]">
               <p className="text-white">#Framework/ Library</p>
             </div>
-            <div className="flex flex-row gap-3 py-5 mobile:flex-wrap">
+            <div className="flex flex-row gap-5 py-5 mobile:flex-wrap">
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
@@ -255,7 +255,7 @@ const Skill: React.FC = () => {
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[110px]">
               <p className="text-white">#Server</p>
             </div>
-            <div className="flex flex-row gap-3 py-5">
+            <div className="flex flex-row gap-5 py-5">
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                 <div className="flex flex-col w-[90px] justify-center items-center">
                   <img
@@ -282,7 +282,7 @@ const Skill: React.FC = () => {
               <p className="text-white">#Tooling/ DevOps</p>
             </div>
             <div className="flex flex-row flex-wrap gap-3 py-5">
-              <div className="flex flex-row gap-3 py-5">
+              <div className="flex flex-row gap-5 py-5">
                 <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
                   <div className="flex flex-col w-[90px] justify-center items-center">
                     <img

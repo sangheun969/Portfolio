@@ -130,10 +130,10 @@ const Header: React.FC = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {isHovered ? (
+          {scrolled ? (
             <span className="text-black text-xs font-bold">Github</span>
           ) : (
-            <img src={GitHub} alt="GitHub" />
+            <span className="text-white text-xs font-bold">Github</span>
           )}
         </div>
         <div
@@ -142,10 +142,10 @@ const Header: React.FC = () => {
           onMouseEnter={() => setIsBlogHovered(true)}
           onMouseLeave={() => setIsBlogHovered(false)}
         >
-          {isBlogHovered ? (
+          {scrolled ? (
             <span className="text-black text-xs font-bold">Blog</span>
           ) : (
-            <img src={Tstory} alt="Tstory" />
+            <span className="text-white text-xs font-bold">Blog</span>
           )}
         </div>
       </div>

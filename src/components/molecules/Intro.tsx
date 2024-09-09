@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import TextHeader from "../atoms/TextHeader";
 import TextHeaerSmall from "../atoms/TextHeaderSmall";
+
 const Intro: React.FC = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const textRefs = useRef([0, 0, 0, 0]);
@@ -30,7 +31,7 @@ const Intro: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center absolute">
       <div className="overflow-hidden h-[140px] mobile:h-[70px] relative ">
         <div
           className={"sticky "}

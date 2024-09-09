@@ -69,9 +69,6 @@ const Work2: React.FC = () => {
               </li>
             </ul>
           </div>
-          {/* <ul className="font-['Tenada']">
-            <li>개발자 커뮤니티 WEB PAGE</li>
-          </ul> */}
           <div className="pt-4 flex flex-row justify-between">
             <button className="w-[15px]" onClick={handleToggleContent}>
               <img src={!isContentVisible ? UpIcon : DownIcon} alt="" />
