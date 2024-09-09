@@ -40,8 +40,8 @@ const Intro: React.FC = () => {
             transition: "transform 0.1s ease-out",
           }}
         >
-          <TextHeader>안녕하세요</TextHeader>
-          <TextHeader>안녕하세요</TextHeader>
+          <TextHeader>사용자 경험과</TextHeader>
+          <TextHeader>사용자 경험과</TextHeader>
         </div>
       </div>
       <div className="overflow-hidden h-[140px] relative ">
@@ -52,8 +52,8 @@ const Intro: React.FC = () => {
             transition: "transform 0.1s ease-out",
           }}
         >
-          <TextHeader>사용자 경험을 최우선적인</TextHeader>
-          <TextHeader>사용자 경험을 최우선적인</TextHeader>
+          <TextHeader>인터랙션을 최우선으로 생각하는</TextHeader>
+          <TextHeader>인터랙션을 최우선으로 생각하는</TextHeader>
         </div>
       </div>
       <div className="overflow-hidden h-[138px] mobile:h-[70px] relative ">

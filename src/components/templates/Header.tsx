@@ -85,7 +85,7 @@ const Header: React.FC = () => {
         scrolled ? "bg-white" : "bg-black/5"
       } z-50`}
     >
-      <div className="w-[70px] h-[70px] ">
+      <div className="w-[70px] h-[70px]">
         <img src={SangTitle} alt="" />
       </div>
       <ul className="flex gap-12 font-NOTO text-xl uppercase font-semibold text-[#666] ">
