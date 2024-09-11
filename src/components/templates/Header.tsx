@@ -90,7 +90,7 @@ const Header: React.FC = () => {
       </div>
       <ul className="flex gap-12 font-NOTO text-xl uppercase font-semibold text-[#666] ">
         <li
-          className={`hover:text-[#333] cursor-pointer ${
+          className={`hover:text-[#bbb8b8] cursor-pointer ${
             activeMenu === "about" ? "border-b-2 border-blue-500" : ""
           }`}
           onClick={scrollToTop}
@@ -98,7 +98,7 @@ const Header: React.FC = () => {
           <span>about</span>
         </li>
         <li
-          className={`hover:text-[#333] cursor-pointer ${
+          className={`hover:text-[#bbb8b8] cursor-pointer ${
             activeMenu === "skills" ? "border-b-2 border-blue-500" : ""
           }`}
           onClick={() => handleScrollTo("skills")}
@@ -106,7 +106,7 @@ const Header: React.FC = () => {
           <span>skills</span>
         </li>
         <li
-          className={`hover:text-[#333] cursor-pointer ${
+          className={`hover:text-[#bbb8b8] cursor-pointer ${
             activeMenu === "project" ? "border-b-2 border-blue-500" : ""
           }`}
           onClick={() => handleScrollTo("work1")}
@@ -115,7 +115,7 @@ const Header: React.FC = () => {
         </li>
 
         <li
-          className={`hover:text-[#333] cursor-pointer ${
+          className={`hover:text-[#bbb8b8] cursor-pointer ${
             activeMenu === "contest" ? "border-b-2 border-blue-500" : ""
           }`}
           onClick={() => handleScrollTo("contest")}
