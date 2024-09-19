@@ -31,7 +31,7 @@ const Work3: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="h-full flex flex-row justify-center rounded-lg gap-24">
+      <div className="h-full flex flex-row justify-center rounded-lg gap-24 mobile:flex-col">
         <div className="flex flex-col w-[400px]">
           <p className="text-[30px] font-['Tenada'] text-[#9d85f1] font-bold">
             #MediaRoad

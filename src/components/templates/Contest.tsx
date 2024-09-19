@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Contest: React.FC = () => {
   return (
     <div className="w-full h-full bg-[#15181B]">
-      <div className="w-[1409px] flex flex-col mx-auto ">
+      <div className="w-[1409px] flex flex-col mx-auto mobile:w-[420px]">
         <div className="w-full py-[110px]">
           <p className="text-5xl font-bold font-['Tenada'] text-white">
             Contest

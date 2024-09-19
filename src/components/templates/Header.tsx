@@ -88,7 +88,7 @@ const Header: React.FC = () => {
       <div className="w-[70px] h-[70px]">
         <img src={SangTitle} alt="" />
       </div>
-      <ul className="flex gap-12 font-NOTO text-xl uppercase font-semibold text-[#666] ">
+      <ul className="flex gap-12 font-NOTO text-xl uppercase font-semibold text-[#666] mobile:text-[12px]">
         <li
           className={`hover:text-[#bbb8b8] cursor-pointer ${
             activeMenu === "about" ? "border-b-2 border-blue-500" : ""
@@ -131,7 +131,9 @@ const Header: React.FC = () => {
           onMouseLeave={() => setIsHovered(false)}
         >
           {scrolled ? (
-            <span className="text-black text-xs font-bold">Github</span>
+            <span className="text-black text-xs font-bold mobile:text-[10px]">
+              Github
+            </span>
           ) : (
             <span className="text-white text-xs font-bold">Github</span>
           )}
@@ -143,7 +145,9 @@ const Header: React.FC = () => {
           onMouseLeave={() => setIsBlogHovered(false)}
         >
           {scrolled ? (
-            <span className="text-black text-xs font-bold">Blog</span>
+            <span className="text-black text-xs font-bold mobile:text-[10px]">
+              Blog
+            </span>
           ) : (
             <span className="text-white text-xs font-bold">Blog</span>
           )}

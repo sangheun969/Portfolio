@@ -47,13 +47,13 @@ const Hackathon: React.FC = () => {
       }}
     >
       <div className="">
-        <div className="flex flex-row">
+        <div className="flex flex-row mobile:flex-col">
           <div>
             <ImageSlide />
           </div>
-          <div className="w-[700px] h-full">
-            <span className="w-[590px] font-NOTO text-2xl flex flex-col mx-auto">
-              <div className="font-extrabold text-white text-[60px] py-3 font-NOTO bg-black bg-gradient-to-r from-black to-gray-500">
+          <div className="w-[700px] h-full mobile:w-[400px]">
+            <span className="w-[590px] font-NOTO text-2xl flex flex-col mx-auto mobile:w-[420px]">
+              <div className="font-extrabold text-white text-[60px] mobile:text-[40px] py-3 font-NOTO bg-black bg-gradient-to-r from-black to-gray-500">
                 <div className="">
                   <p>ETH SEOUL</p>
                 </div>
@@ -78,7 +78,7 @@ const Hackathon: React.FC = () => {
                   </div>
                   <p className="text-base">2024/03/29~2024/03/31</p>
                 </li>
-                <li className="text-sm flex flex-col gap-3">
+                <li className="text-sm flex flex-col gap-3 mobile:w-full">
                   <h1>
                     이 행사는 이더리움 생태계의 발전을 위한 아이디어를 공유하고
                     함께 발전시키는 동적인 플랫폼으로, 블록체인 분야의

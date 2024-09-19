@@ -4,7 +4,7 @@ interface TextHeaderSmallProps {
 
 const TextHeaerSmall: React.FC<TextHeaderSmallProps> = ({ children }) => {
   return (
-    <p className="text-9xl font-NOTO font-medium text-center text-white">
+    <p className="text-9xl font-NOTO font-medium text-center text-white mobile:text-4xl">
       {children}
     </p>
   );

@@ -32,9 +32,9 @@ const Intro: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center absolute">
-      <div className="overflow-hidden h-[140px] mobile:h-[70px] relative ">
+      <div className="overflow-hidden h-[140px] mobile:h-[60px] relative ">
         <div
-          className={"sticky "}
+          className={"sticky"}
           style={{
             transform: `translateY(${textRefs.current[0]}%) `,
             transition: "transform 0.1s ease-out",
@@ -44,7 +44,7 @@ const Intro: React.FC = () => {
           <TextHeader>사용자 경험과</TextHeader>
         </div>
       </div>
-      <div className="overflow-hidden h-[140px] relative ">
+      <div className="overflow-hidden h-[140px] relative mobile:h-[60px]">
         <div
           className="sticky"
           style={{
@@ -56,7 +56,7 @@ const Intro: React.FC = () => {
           <TextHeader>인터랙션을 최우선으로 생각하는</TextHeader>
         </div>
       </div>
-      <div className="overflow-hidden h-[138px] mobile:h-[70px] relative ">
+      <div className="overflow-hidden h-[138px] mobile:h-[40px] relative ">
         <div
           style={{
             transform: `translateY(${textRefs.current[2]}%) `,
@@ -67,7 +67,7 @@ const Intro: React.FC = () => {
           <TextHeaerSmall>프론트엔드 개발자</TextHeaerSmall>
         </div>
       </div>
-      <div className="overflow-hidden h-[138px] relative ">
+      <div className="overflow-hidden h-[138px] relative mobile:h-[40px]">
         <div
           style={{
             transform: `translateY(${textRefs.current[3]}%) `,

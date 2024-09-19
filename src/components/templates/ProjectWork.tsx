@@ -10,7 +10,7 @@ const ProjectWork: React.FC = () => {
           Project
         </p>
       </div>
-      <div className="flex flex-col justify-around w-[1050px] h-full gap-[150px] items-center  ">
+      <div className="flex flex-col justify-around w-[1050px] h-full gap-[150px] items-center mobile:w-[767px]">
         <Work1 />
         <Work2 />
         <Work3 />

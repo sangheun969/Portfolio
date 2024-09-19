@@ -6,7 +6,13 @@ const Banner: React.FC = () => {
   return (
     <div>
       <div className="border w-full h-[100vh] pt-[90px] flex justify-center items-center">
-        <video className="" src={BgAnime1} autoPlay loop muted />
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src={BgAnime1}
+          autoPlay
+          loop
+          muted
+        />
         <FadeAnime />
       </div>
     </div>

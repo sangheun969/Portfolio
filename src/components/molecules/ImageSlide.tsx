@@ -11,7 +11,7 @@ const ImageSlide = () => {
     fade: true,
   };
   return (
-    <div className="slider-container slick-slider pb-5 w-[650px] h-[690px]">
+    <div className="slider-container slick-slider pb-5 w-[650px] h-[690px] mobile:w-[450px] mobile:h-[490px]">
       <Slider {...settings}>
         <div className="">
           <img
