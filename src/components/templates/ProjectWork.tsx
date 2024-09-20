@@ -4,13 +4,13 @@ import Work2 from "../molecules/Work2";
 import Work3 from "../molecules/Work3";
 const ProjectWork: React.FC = () => {
   return (
-    <div className="flex flex-col w-full justify-center items-center py-[120px] bg-[#F4F3ED]">
+    <div className="flex flex-col w-full justify-center items-center py-[120px] bg-[#F4F3ED] mobile:w-[520px]">
       <div className="py-[80px]">
         <p className="text-center font-bold text-[50px] font-['Tenada']">
           Project
         </p>
       </div>
-      <div className="flex flex-col justify-around w-[1050px] h-full gap-[150px] items-center mobile:w-[767px]">
+      <div className="flex flex-col justify-around w-[1050px] h-full gap-[150px] items-center mobile:w-[520px]">
         <Work1 />
         <Work2 />
         <Work3 />

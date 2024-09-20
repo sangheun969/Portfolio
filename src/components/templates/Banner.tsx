@@ -5,9 +5,9 @@ import BgAnime1 from "../../assets/BgAnime1.mp4";
 const Banner: React.FC = () => {
   return (
     <div>
-      <div className="border w-full h-[100vh] pt-[90px] flex justify-center items-center">
+      <div className="border w-full h-[100vh] pt-[90px] flex justify-center items-center mobile:w-[520px]">
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0 left-0 w-full h-full object-cover mobile:w-[520px]"
           src={BgAnime1}
           autoPlay
           loop

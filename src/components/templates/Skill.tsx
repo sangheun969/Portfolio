@@ -30,7 +30,7 @@ const Skill: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full h-full py-[120px] flex flex-col items-center bg-[#15181B]">
+      <div className="w-full h-full py-[120px] flex flex-col items-center bg-[#15181B] mobile:w-[520px]">
         <div className="">
           <p className="text-center font-bold text-[50px] text-white">Skills</p>
         </div>

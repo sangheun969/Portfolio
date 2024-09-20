@@ -81,14 +81,14 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-0 w-full h-[90px] px-4 flex flex-row justify-between items-center transition-colors duration-300 ${
+      className={`fixed top-0 w-full mobile:w-[520px] h-[90px] mobile:h-[70px] px-4 flex flex-row justify-between items-center transition-colors duration-300 ${
         scrolled ? "bg-white" : "bg-black/5"
       } z-50`}
     >
       <div className="w-[70px] h-[70px]">
         <img src={SangTitle} alt="" />
       </div>
-      <ul className="flex gap-12 font-NOTO text-xl uppercase font-semibold text-[#666] mobile:text-[12px]">
+      <ul className="flex gap-12 font-NOTO text-xl uppercase font-semibold text-[#666] mobile:text-[10px]">
         <li
           className={`hover:text-[#bbb8b8] cursor-pointer ${
             activeMenu === "about" ? "border-b-2 border-blue-500" : ""
@@ -135,7 +135,9 @@ const Header: React.FC = () => {
               Github
             </span>
           ) : (
-            <span className="text-white text-xs font-bold">Github</span>
+            <span className="text-white text-xs font-bold mobile:text-[10px]">
+              Github
+            </span>
           )}
         </div>
         <div
@@ -149,7 +151,9 @@ const Header: React.FC = () => {
               Blog
             </span>
           ) : (
-            <span className="text-white text-xs font-bold">Blog</span>
+            <span className="text-white text-xs font-bold mobile:text-[10px]">
+              Blog
+            </span>
           )}
         </div>
       </div>
