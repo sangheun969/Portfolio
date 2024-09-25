@@ -134,11 +134,11 @@ const Work2: React.FC = () => {
           <img
             src={Stacker1}
             alt=""
-            className="object-cover w-[500px] h-[500px] rounded-xl border"
+            className="object-cover w-[500px] h-[500px] rounded-xl border mobile:w-[300px] mobile:h-[300px]"
           />
           {isHovered && (
             <div
-              className={`absolute h-[500px] inset-0 bg-white flex items-center justify-center ${
+              className={`absolute h-[500px] mobile:w-[300px] mobile:h-[300px] inset-0 bg-white flex items-center justify-center ${
                 isHovered ? "bg-opacity-50 " : "bg-opacity-0"
               }`}
             >

@@ -101,7 +101,7 @@ const Work3: React.FC = () => {
           <img
             src={MediaWeb}
             alt=""
-            className="object-cover w-[500px] h-[500px] rounded-xl border"
+            className="object-cover w-[500px] h-[500px] rounded-xl border mobile:w-[300px] mobile:h-[300px]"
           />
           <div className="mt-10">
             <Button
