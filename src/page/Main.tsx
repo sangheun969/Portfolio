@@ -50,7 +50,7 @@ const Main: React.FC = () => {
   }, [navigate]);
 
   return (
-    <div>
+    <div className="w-full h-full">
       <div className="bg-black/0 peer-hover:bg-black/60 peer">
         <Header />
         <div id="banner" ref={bannerRef}>

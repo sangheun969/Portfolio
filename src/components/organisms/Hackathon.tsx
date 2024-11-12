@@ -59,7 +59,7 @@ const Hackathon: React.FC = () => {
                 </div>
                 <p className="">HACKATON 2024</p>
               </div>
-              <ul className="flex flex-col py-7 gap-2 font-['Tenada'] text-white">
+              <ul className="flex flex-col py-7 gap-2 font-['Tenada'] text-white mobile:py-5">
                 <li className="flex flex-row gap-4">
                   <div className="border-2 rounded-2xl px-2 text-base">
                     <p className="">팀명</p>
@@ -78,7 +78,7 @@ const Hackathon: React.FC = () => {
                   </div>
                   <p className="text-base">2024/03/29~2024/03/31</p>
                 </li>
-                <li className="text-sm flex flex-col gap-3 mobile:w-full">
+                <li className="text-sm flex flex-col gap-3 mobile:w-full mobile:text-xs">
                   <h1>
                     이 행사는 이더리움 생태계의 발전을 위한 아이디어를 공유하고
                     함께 발전시키는 동적인 플랫폼으로, 블록체인 분야의
