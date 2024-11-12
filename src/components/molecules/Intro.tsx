@@ -31,7 +31,7 @@ const Intro: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center absolute">
+    <div className="w-full flex flex-col items-center justify-center absolute">
       <div className="overflow-hidden h-[140px] mobile:h-[60px] relative ">
         <div
           className={"sticky"}

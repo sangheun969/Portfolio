@@ -81,7 +81,7 @@ const Header: React.FC = () => {
 
   return (
     <div
-      className={`fixed top-0 w-full mobile:w-[520px] h-[90px] mobile:h-[70px] px-4 flex flex-row justify-between items-center transition-colors duration-300 ${
+      className={`fixed top-0 w-full h-[90px] mobile:h-[70px] px-4 flex flex-row justify-between items-center transition-colors duration-300 ${
         scrolled ? "bg-white" : "bg-black/5"
       } z-50`}
     >
