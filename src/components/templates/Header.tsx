@@ -88,7 +88,7 @@ const Header: React.FC = () => {
       <div className="w-[70px] h-[70px] mobile:w-[50px] mobile:h-[50px]">
         <img src={SangTitle} alt="" />
       </div>
-      <ul className="flex font-NOTO text-xl uppercase font-semibold text-[#666] mobile:text-[10px] gap-12 mobile:gap-6">
+      <ul className="flex font-NOTO text-xl uppercase font-semibold text-[#666] mobile:text-[9px] gap-12 mobile:gap-4">
         <li
           className={`hover:text-[#bbb8b8] cursor-pointer ${
             activeMenu === "about" ? "border-b-2 border-blue-500" : ""

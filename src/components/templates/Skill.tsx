@@ -34,14 +34,14 @@ const Skill: React.FC = () => {
         <div className="py-[120px]">
           <p className="text-center font-bold text-[50px] text-white">Skills</p>
         </div>
-        <div className="w-[50%] h-full pt-[80px] flex flex-col gap-8">
+        <div className="w-[40%] h-full pt-[80px] flex flex-col gap-8">
           <div className="relative w-full h-full">
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[260px]">
               <p className="text-white">#Programing Languages</p>
             </div>
             <div className="flex flex-row gap-5 py-5">
               <div className="relative border-1 border-gray-500 shadow-indigo-500/40 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={JsIcon2}
                     alt="Javascript"
@@ -59,7 +59,7 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={TypeScriptIcon}
                     alt="Javascript"
@@ -84,7 +84,7 @@ const Skill: React.FC = () => {
             </div>
             <div className="flex flex-row gap-5 py-5 mobile:flex-wrap">
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={ReactIcon}
                     alt="Javascript"
@@ -102,7 +102,7 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={ReactQIcon}
                     alt="Javascript"
@@ -120,7 +120,7 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={RecoilIcon}
                     alt="Javascript"
@@ -138,7 +138,7 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={NodeJSIcon}
                     alt="Javascript"
@@ -156,7 +156,7 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={ExpressJSIcon}
                     alt="Javascript"
@@ -174,7 +174,7 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={WebSocketIcon}
                     alt="Javascript"
@@ -193,7 +193,7 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={TailwindIcon}
                     alt="Javascript"
@@ -211,7 +211,7 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={SolidityIcon}
                     alt="Javascript"
@@ -231,7 +231,7 @@ const Skill: React.FC = () => {
             </div>
             <div className="flex flex-row gap-3">
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={NextIcon}
                     alt="Javascript"
@@ -257,7 +257,7 @@ const Skill: React.FC = () => {
             </div>
             <div className="flex flex-row gap-5 py-5">
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                   <img
                     src={MySQLIcon}
                     alt="Javascript"
@@ -304,7 +304,7 @@ const Skill: React.FC = () => {
               </div>
               <div className="flex flex-row gap-3 py-5">
                 <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                  <div className="flex flex-col w-[90px] justify-center items-center">
+                  <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                     <img
                       src={AWSS3Icon}
                       alt="Javascript"
@@ -324,7 +324,7 @@ const Skill: React.FC = () => {
               </div>
               <div className="flex flex-row gap-3 py-5">
                 <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                  <div className="flex flex-col w-[90px] justify-center items-center">
+                  <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
                     <img
                       src={GithubActionsIcon}
                       alt="Javascript"
