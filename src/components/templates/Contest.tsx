@@ -6,7 +6,7 @@ const Contest: React.FC = () => {
   return (
     <div className="w-full h-full bg-[#15181B] flex justify-center items-center">
       <div className="flex flex-col mx-auto mobile:w-full">
-        <div className="w-full py-[110px]">
+        <div className="w-full py-[110px] mobile:py-[80px]">
           <p className="text-5xl font-bold font-['Tenada'] text-white mobile:text-3xl">
             Contest
           </p>

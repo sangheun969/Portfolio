@@ -30,28 +30,32 @@ const Skill: React.FC = () => {
         y: { duration: 1 },
       }}
     >
-      <div className="w-full h-full flex flex-col items-center justify-center bg-[#15181B]">
+      <div className="w-full h-full flex flex-col bg-[#15181B]">
         <div className="py-[120px]">
           <p className="text-center font-bold text-[50px] text-white">Skills</p>
         </div>
-        <div className="w-[40%] h-full pt-[80px] flex flex-col gap-8">
-          <div className="relative w-full h-full">
+        <div className="w-[70%] pt-[80px] flex flex-col justify-center gap-8 px-10">
+          <div className="relative">
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[260px]">
-              <p className="text-white">#Programing Languages</p>
+              <p className="text-white mobile:text-[10px]">
+                #Programing Languages
+              </p>
             </div>
             <div className="flex flex-row gap-5 py-5">
               <div className="relative border-1 border-gray-500 shadow-indigo-500/40 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={JsIcon2}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px]"
                   />
-                  <span className="text-white">Javascript</span>
+                  <span className="text-white mobile:text-[10px]">
+                    Javascript
+                  </span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li className="">
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       자바스크립트의 변수 선언, 함수 정의, 비동기 프로그래밍,
                       DOM 조작 등을 이해하고 활용할 수 있습니다.
                     </p>
@@ -59,17 +63,19 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={TypeScriptIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px]"
                   />
-                  <span className="text-white">Typecript</span>
+                  <span className="text-white mobile:text-[10px]">
+                    Typecript
+                  </span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       타입스크립트의 정적 타입 시스템, 인터페이스, 제네릭, 모듈,
                       그리고 타입 검사 기능을 이해하고 활용 수 있습니다.
                     </p>
@@ -80,21 +86,23 @@ const Skill: React.FC = () => {
           </div>
           <div className="relative w-full h-full">
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[230px]">
-              <p className="text-white">#Framework/ Library</p>
+              <p className="text-white mobile:text-[10px]">
+                #Framework/ Library
+              </p>
             </div>
             <div className="flex flex-row gap-5 py-5 mobile:flex-wrap">
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={ReactIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px]"
                   />
-                  <span className="text-white">ReactJS</span>
+                  <span className="text-white mobile:text-[10px]">ReactJS</span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       ReactJS의 컴포넌트 기반 아키텍처, 상태 관리, 훅, 라우팅,
                       그리고 라이프사이클 메서드를 이해하고 활용할 수 있습니다.
                     </p>
@@ -102,17 +110,19 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={ReactQIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px]"
                   />
-                  <span className="text-white">ReactQuery</span>
+                  <span className="text-white mobile:text-[10px]">
+                    ReactQuery
+                  </span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       서버 상태 관리, 데이터 패칭, 캐싱, 그리고 상태 동기화의
                       효율적인 방법을 활용할 수 있습니다.
                     </p>
@@ -120,17 +130,17 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={RecoilIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px]"
                   />
-                  <span className="text-white">Recoil</span>
+                  <span className="text-white mobile:text-[10px]">Recoil</span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       애플리케이션 상태를 전역적으로 관리하고, 상태를 효율적으로
                       공유하며, 복잡한 상태 로직을 간단하게 처리하는 방법을 이해
                     </p>
@@ -138,17 +148,17 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={NodeJSIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px]"
                   />
-                  <span className="text-white">NodeJS</span>
+                  <span className="text-white mobile:text-[10px]">NodeJS</span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       서버의 API를 구축할 수 있으며, DB와 연동하여 CRUD 기능을
                       수행할 수 있습니다.
                     </p>
@@ -156,17 +166,17 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={ExpressJSIcon}
                     alt="Javascript"
                     className="object-contain bg-white w-[60px] h-[60px]"
                   />
-                  <span className="text-white">Express</span>
+                  <span className="text-white mobile:text-[10px]">Express</span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       웹 서버 구축을 위한 라우팅, 미들웨어 관리, 그리고 RESTful
                       API 개발 가능.
                     </p>
@@ -174,17 +184,19 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={WebSocketIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px] bg-white"
                   />
-                  <span className="text-white">WebSocket</span>
+                  <span className="text-white mobile:text-[10px]">
+                    WebSocket
+                  </span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       실시간 양방향 통신을 구현하여 클라이언트와 서버 간의
                       즉각적 데이터 전송 및 업데이트를 처리하는 방법을
                       숙지했습니다.
@@ -193,17 +205,19 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={TailwindIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px]"
                   />
-                  <span className="text-white">TailwindCSS</span>
+                  <span className="text-white mobile:text-[10px]">
+                    TailwindCSS
+                  </span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       유연한 디자인 시스템을 활용해 클래스 기반의 스타일링을
                       통해 신속하게 반응형 UI를 구축하는 방법을 이해.
                     </p>
@@ -211,17 +225,19 @@ const Skill: React.FC = () => {
                 </ul>
               </div>
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={SolidityIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px] bg-white"
                   />
-                  <span className="text-white">Solidity</span>
+                  <span className="text-white mobile:text-[10px]">
+                    Solidity
+                  </span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       스마트 계약을 작성하고 배포하여 블록체인에서 자동화된 거래
                       및 애플리케이션 로직을 구현하는 방법 숙지 했습니다.
                     </p>
@@ -231,17 +247,17 @@ const Skill: React.FC = () => {
             </div>
             <div className="flex flex-row gap-3">
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={NextIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px] bg-white"
                   />
-                  <span className="text-white">NextJS</span>
+                  <span className="text-white mobile:text-[10px]">NextJS</span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       서버 사이드 렌더링, 정적 사이트 생성, 그리고 API 라우팅을
                       통해 성능 최적화된 React 애플리케이션을 개발하는 방법을
                       숙지
@@ -253,21 +269,21 @@ const Skill: React.FC = () => {
           </div>
           <div className="relative w-full h-full">
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[110px]">
-              <p className="text-white">#Server</p>
+              <p className="text-white mobile:text-[10px]">#Server</p>
             </div>
             <div className="flex flex-row gap-5 py-5">
               <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                   <img
                     src={MySQLIcon}
                     alt="Javascript"
                     className="object-contain w-[60px] h-[60px] bg-white"
                   />
-                  <span className="text-white">MySQL</span>
+                  <span className="text-white mobile:text-[10px]">MySQL</span>
                 </div>
                 <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                   <li>
-                    <p className="text-xs">
+                    <p className="text-xs mobile:text-sm">
                       관계형 데이터베이스 설계, SQL 쿼리 작성, 데이터베이스 관리
                       및 최적화 방법을 통해 효율적인 데이터 저장과 검색을
                       구현하는 기술을 숙지했습니다.
@@ -279,22 +295,24 @@ const Skill: React.FC = () => {
           </div>
           <div className="relative w-full h-full">
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[200px]">
-              <p className="text-white">#Tooling/ DevOps</p>
+              <p className="text-white mobile:text-[10px]">#Tooling/ DevOps</p>
             </div>
             <div className="flex flex-row flex-wrap gap-3 py-5">
               <div className="flex flex-row gap-5 py-5">
                 <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                  <div className="flex flex-col w-[90px] justify-center items-center">
+                  <div className="flex flex-col w-[90px] justify-center items-center  mobile:w-[50px]">
                     <img
                       src={EC2Icon}
                       alt="Javascript"
                       className="object-contain w-[60px] h-[60px] bg-white"
                     />
-                    <span className="text-white">AWS EC2</span>
+                    <span className="text-white mobile:text-[10px]">
+                      AWS EC2
+                    </span>
                   </div>
                   <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                     <li>
-                      <p className="text-xs">
+                      <p className="text-xs mobile:text-sm">
                         가상 서버 인스턴스를 생성하고 관리하여 클라우드 기반
                         애플리케이션을 배포하고 확장 가능.
                       </p>
@@ -304,17 +322,19 @@ const Skill: React.FC = () => {
               </div>
               <div className="flex flex-row gap-3 py-5">
                 <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                  <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                  <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px]">
                     <img
                       src={AWSS3Icon}
                       alt="Javascript"
                       className="object-contain w-[60px] h-[60px] bg-white"
                     />
-                    <span className="text-white">AWS S3</span>
+                    <span className="text-white mobile:text-[10px]">
+                      AWS S3
+                    </span>
                   </div>
                   <ul className="absolute flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                     <li>
-                      <p className="text-xs">
+                      <p className="text-xs mobile:text-sm">
                         확장 가능한 객체 스토리지 서비스로 파일 저장, 관리,
                         그리고 고가용성 데이터 배포를 효율적으로 구현 가능.
                       </p>
@@ -324,17 +344,19 @@ const Skill: React.FC = () => {
               </div>
               <div className="flex flex-row gap-3 py-5">
                 <div className="relative borer-1 border-gray-500 rounded-xl p-4 group middle justify-center items-center flex flex-row hover:pr-[200px] duration-500 bg-black">
-                  <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[70px]">
+                  <div className="flex flex-col w-[90px] justify-center items-center mobile:w-[50px] mobile:h-[50px]">
                     <img
                       src={GithubActionsIcon}
                       alt="Javascript"
                       className="object-contain w-[60px] h-[60px] bg-white"
                     />
-                    <span className="text-white">GithubActions</span>
+                    <span className="text-white mobile:text-[10px]">
+                      GithubActions
+                    </span>
                   </div>
                   <ul className="absolute pl-3 flex-col py-4 group-hover:opacity-100 group-hover:left-[110px] text-white group-hover:duration-75 flex w-[150px] h-[100%] left-[150px] overflow-hidden opacity-0">
                     <li>
-                      <p className="text-xs">
+                      <p className="text-xs mobile:text-sm">
                         자동화된 CI/CD 파이프라인을 설정하고, .yml 파일을
                         작성하여 코드 변경 시 자동으로 테스트, 빌드, 배포를 수행
                         가능.
