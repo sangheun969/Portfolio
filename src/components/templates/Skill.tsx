@@ -36,7 +36,7 @@ const Skill: React.FC = () => {
             Skills
           </p>
         </div>
-        <div className="w-[60%] pt-[80px] flex flex-col justify-center gap-8 px-10">
+        <div className="w-[65%] pt-[80px] flex flex-col justify-center gap-8 px-10">
           <div className="relative">
             <div className="py-1 px-4 my-5 text-xl border-2 rounded-2xl w-[260px]">
               <p className="text-white mobile:text-[10px]">
