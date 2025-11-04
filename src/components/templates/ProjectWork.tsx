@@ -11,9 +11,9 @@ const ProjectWork: React.FC = () => {
         </p>
       </div>
       <div className="flex flex-col justify-around w-[1050px] h-full gap-[150px] items-center mobile:w-[520px]">
-        <Work1 />
-        <Work2 />
         <Work3 />
+        <Work2 />
+        <Work1 />
       </div>
     </div>
   );

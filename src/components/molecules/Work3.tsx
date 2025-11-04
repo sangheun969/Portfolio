@@ -21,7 +21,10 @@ const Work3: React.FC = () => {
     window.open("https://mediaroad.net/", "_blank");
   };
   const handleWebButtonClick2 = () => {
-    window.open("https://github.com/sangheun969/projectStacker-Labs", "_blank");
+    window.open(
+      "https://github.com/sangheun969/MediaRoadCom/tree/main/company",
+      "_blank"
+    );
   };
   const handleToggleContent = () => {
     setIsContentVisible(!isContentVisible);
