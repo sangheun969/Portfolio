@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import {
-  MediaWeb,
-  NextIcon,
+  Naegift1,
+  ReactIcon,
+  RecoilIcon,
   TailwindIcon,
+  GithubActionsIcon,
+  AWSICon,
   DownIcon,
+  MediaWeb,
   UpIcon,
 } from "../../image/index";
 import Button from "../atoms/Button";
@@ -13,8 +17,11 @@ const Work3: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isContentVisible, setIsContentVisible] = useState(false);
 
+  const handleWebButtonClick = () => {
+    window.open("https://mediaroad.net/", "_blank");
+  };
   const handleWebButtonClick2 = () => {
-    window.open("https://github.com/sangheun969/mediaroad", "_blank");
+    window.open("https://github.com/sangheun969/projectStacker-Labs", "_blank");
   };
   const handleToggleContent = () => {
     setIsContentVisible(!isContentVisible);
@@ -39,10 +46,24 @@ const Work3: React.FC = () => {
           <div className="border-b-2 py-4">
             <ul className="flex flex-row w-full gap-2">
               <li className="p-1 border rounded-lg bg-white">
-                <img src={NextIcon} alt="" className="w-[30px] h-[30px]" />
+                <img src={ReactIcon} alt="" className="w-[30px] h-[30px] " />
               </li>
               <li className="p-1 border rounded-lg bg-white">
+                <img src={RecoilIcon} alt="" className="w-[30px] h-[30px]" />
+              </li>
+
+              <li className="p-1 border rounded-lg bg-white">
                 <img src={TailwindIcon} alt="" className="w-[30px] h-[30px]" />
+              </li>
+              <li className="p-1 border rounded-lg bg-white">
+                <img
+                  src={GithubActionsIcon}
+                  alt=""
+                  className="w-[30px] h-[30px]"
+                />
+              </li>
+              <li className="p-1 border rounded-lg bg-white">
+                <img src={AWSICon} alt="" className="w-[30px] h-[30px]" />
               </li>
             </ul>
           </div>
@@ -59,15 +80,11 @@ const Work3: React.FC = () => {
               <div className="font-['Tenada'] flex flex-col justify-between text-sm gap-3 py-4">
                 <ul>
                   <li className="font-bold text-xl">프로젝트 세팅</li>
-                  <li className="p-1">
-                    NextJs 14, Tailwind 초기 프로젝트 세팅
-                  </li>
+                  <li className="p-1">React JS, Tailwind 초기 프로젝트 세팅</li>
                 </ul>
                 <ul>
                   <li className="font-bold text-xl">홍보 게시물</li>
-                  <li className="p-1">
-                    서버 사이드 렌더링을 이용한 (주)메디아 로드 홍보물 사이트
-                  </li>
+                  <li className="p-1">(주)메디아 로드 홍보물 사이트</li>
                 </ul>
                 <ul>
                   {/* <li className="font-bold text-xl">구매 내역</li>
@@ -97,12 +114,30 @@ const Work3: React.FC = () => {
             </div>
           )}
         </div>
-        <div className="">
+        <div
+          className="relative "
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           <img
             src={MediaWeb}
             alt=""
             className="object-cover w-[500px] h-[500px] rounded-xl border mobile:w-[300px] mobile:h-[300px]"
           />
+          {isHovered && (
+            <div
+              className={`absolute h-[500px] mobile:w-[300px] mobile:h-[300px] inset-0 bg-white flex items-center justify-center ${
+                isHovered ? "bg-opacity-50 " : "bg-opacity-0"
+              }`}
+            >
+              <Button
+                variant="icontBtn"
+                size="md"
+                label="Web"
+                onClick={handleWebButtonClick}
+              />
+            </div>
+          )}
           <div className="mt-10">
             <Button
               variant="sendBtn1"
