@@ -2,6 +2,7 @@ import React from "react";
 import Work1 from "../molecules/Work1";
 import Work2 from "../molecules/Work2";
 import Work3 from "../molecules/Work3";
+import Work4 from "../molecules/Work4";
 const ProjectWork: React.FC = () => {
   return (
     <div className="flex flex-col w-full justify-center items-center py-[120px] bg-[#F4F3ED]">
@@ -14,6 +15,7 @@ const ProjectWork: React.FC = () => {
         <Work3 />
         <Work2 />
         <Work1 />
+        <Work4 />
       </div>
     </div>
   );

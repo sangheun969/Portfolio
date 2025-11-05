@@ -33,9 +33,12 @@ import JsIcon2 from "./jsIcon2.png";
 import DownIcon from "./dowIcon.png";
 import UpIcon from "./upIcon.png";
 import EC2Icon from "./awsEc2.png";
+import Dealer from "./dealers.png";
+import Vite from "./viteIcon.png";
 
 export {
   Profile,
+  Vite,
   GitHub,
   Naegift1,
   NaeGift2,
@@ -70,4 +73,5 @@ export {
   DownIcon,
   UpIcon,
   EC2Icon,
+  Dealer,
 };
